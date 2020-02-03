@@ -24,3 +24,29 @@ function minus()
 	res = num1 - num2;
 	document.getElementById('result').innerHTML = res;	
 }
+
+function mul()
+{
+	var num1, num2, res;
+	num1 = document.getElementById('n1').value;
+	num1 = parseInt(num1);
+	num2 = document.getElementById('n2').value;
+	num2 = parseInt(num2);
+	res = num1 * num2;
+	document.getElementById('result').innerHTML = res;	
+}
+function div()
+{
+	var num1, num2, res;
+	num1 = document.getElementById('n1').value;
+	num1 = parseInt(num1);
+	num2 = document.getElementById('n2').value;
+	num2 = parseInt(num2);
+	//Добавляем проверку деления на 0
+	if (num2 !=0){
+		res = num1 / num2;
+		document.getElementById('result').innerHTML = res;
+		}
+		else
+			document.getElementById('result').innerHTML = "Ошибка! Деление на 0 запрещено!";
+}
